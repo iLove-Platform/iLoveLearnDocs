@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Иконка информации">
+  <!-- Transparent background; a square with slightly rounded corners and a white border -->
+  <rect x="8" y="8" width="284" height="284" rx="32" ry="32" fill="#1b2f5b" stroke="#ffffff" stroke-width="6"/>
+
+  <!-- The letter “i” with serifs and rounded edges -->
+  <g fill="#ffffff" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="150" cy="86" r="18"/>
+    <path d="M134,133 L166,133 L166,219 L192,219 L192,231 L108,231 L108,219 L134,219 L134,145 L111,145 L111,141 Z"/>
+  </g>
+</svg>
