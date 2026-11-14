@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Что такое Node.js — iLoveLearnDocs</title>
+
+  <!-- Шрифты: Open Sans (текст и заголовки), Fira Code (код) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Prism.js: тема для подсветки кода -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+  <!-- Наши стили -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Контент страницы: чистый HTML, текст на фоне -->
+  <template id="page-content">
+    <h1>Что такое Node.js — iLoveLearnDocs</h1>
+
+    <p>
+      Node.js — это среда, которая позволяет запускать JavaScript не только
+      в браузере, но и на компьютере или сервере. Раньше JavaScript умел
+      работать только внутри страницы, а с Node.js он стал обычным языком
+      для программ.
+    </p>
+
+    <!-- InfoBlock: короткое пояснение -->
+    <div data-block="info" data-text="Node.js не заменяет браузер, а расширяет JavaScript на сервер. Тот же язык — но другие возможности."></div>
+
+    <p>
+      Проще говоря, Node.js даёт JavaScript возможность делать то, что
+      раньше умели только другие языки: читать файлы, работать с сетью,
+      запускать серверы и общаться с базами данных.
+    </p>
+
+    <h2>Зачем нужен Node.js</h2>
+
+    <p>
+      С помощью Node.js можно писать серверную часть сайта на том же языке,
+      что и клиентскую. Не нужно учить второй язык только ради сервера.
+      Это удобно и экономит время.
+    </p>
+
+    <p>
+      Кроме сайтов, на Node.js пишут инструменты для разработки, скрипты
+      для автоматизации и даже небольшие программы для компьютера.
+    </p>
+
+    <h2>Как это работает</h2>
+
+    <p>
+      В основе Node.js лежит движок V8 — тот же, что стоит в браузере Chrome.
+      Он превращает JavaScript в команды, которые понимает компьютер.
+      Node.js берёт этот движок и добавляет к нему возможности работы
+      с файлами, сетью и системой.
+    </p>
+
+    <!-- DetailInfoBlock: подробное пояснение с заголовком -->
+    <div
+      data-block="detail"
+      data-title="Что такое движок V8"
+      data-text="V8 — это программа, которая читает JavaScript и превращает его в команды для процессора. Она работает прямо во время выполнения кода — поэтому программы на Node.js запускаются быстро."
+    ></div>
+
+    <p>
+      Главная особенность Node.js — он не ждёт, пока закончится одна задача,
+      чтобы начать другую. Пока один запрос обрабатывается, Node.js уже
+      принимает следующий. Поэтому он хорошо справляется с большим числом
+      одновременных подключений.
+    </p>
+
+    <h2>Простой пример</h2>
+
+    <p>
+      Вот как выглядит маленький сервер на Node.js. Он отвечает на запросы
+      простым текстом.
+    </p>
+
+    <!-- CodeBlock: блок кода с подсветкой и кнопкой копирования -->
+    <div
+      data-block="code"
+      data-language="js"
+      data-code="const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.end('Привет из Node.js');
+});
+
+server.listen(3000, () => {
+  console.log('Сервер запущен на порту 3000');
+});"
+    ></div>
+
+    <p>
+      Этот код создаёт сервер, который слушает порт 3000 и на каждый запрос
+      отвечает сообщением. Чтобы запустить его, нужен установленный Node.js
+      и файл с этим кодом.
+    </p>
+
+    <h2>Что нужно знать перед началом</h2>
+
+    <p>
+      Для работы с Node.js достаточно знать основы JavaScript: переменные,
+      функции, объекты и массивы. Всё остальное можно изучать по ходу дела.
+    </p>
+
+    <p>
+      Также понадобится установить Node.js на компьютер. После установки
+      в системе появятся команды node и npm — они нужны для запуска программ
+      и установки библиотек.
+    </p>
+  </template>
+
+  <!-- React, ReactDOM, Babel (CDN) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Prism.js: подсветка кода -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+
+  <!-- Наши компоненты (порядок важен: зависимости выше) -->
+  <script type="text/babel" src="components/InfoBlock.jsx"></script>
+  <script type="text/babel" src="components/DetailInfoBlock.jsx"></script>
+  <script type="text/babel" src="components/CodeBlock.jsx"></script>
+  <script type="text/babel" src="components/Breadcrumbs.jsx"></script>
+  <script type="text/babel" src="components/Header.jsx"></script>
+  <script type="text/babel" src="components/Footer.jsx"></script>
+  <script type="text/babel" src="components/App.jsx"></script>
+
+  <!-- Точка входа -->
+  <script type="text/babel" src="js/app.js"></script>
+</body>
+</html>
