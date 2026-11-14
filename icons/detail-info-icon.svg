@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" width="380" height="380" role="img" aria-label="Иконка детальной информации">
+  <!-- Transparent background -->
+
+  <!-- Main square: dark blue, white border, slightly rounded -->
+  <rect x="11" y="115" width="254" height="254" rx="29" ry="29" fill="#1b2f5b" stroke="#ffffff" stroke-width="6"/>
+
+  <!-- The letter “i” with serifs and rounded edges -->
+  <g transform="translate(138 242) scale(0.89) translate(-150 -150)" fill="#ffffff" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="150" cy="86" r="18"/>
+    <path d="M134,133 L166,133 L166,219 L192,219 L192,231 L108,231 L108,219 L134,219 L134,145 L111,145 L111,141 Z"/>
+  </g>
+
+  <!-- A square with a plus sign in the upper-right corner, almost touching the main image -->
+  <rect x="277" y="11" width="92" height="92" rx="26" ry="26" fill="#6fa6cf" stroke="#ffffff" stroke-width="6"/>
+  <path d="M323,35 V79 M301,57 H345" stroke="#ffffff" stroke-width="11" stroke-linecap="round" fill="none"/>
+</svg>
