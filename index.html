@@ -4,70 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iLoveLearnDocs</title>
+
+    <title>iLoveLearnDocs — образовательная документация</title>
+
+    <meta
+        name="description"
+        content="Независимая образовательная документация по Node.js, Svelte и Astro."
+    >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    >
 </head>
+
 <body>
 
-    <header class="header">
-        <h1>iLoveLearnDocs</h1>
-        <p>Независимая образовательная платформа с документацией по веб-технологиям.</p>
-    </header>
+    <!-- Header -->
+    <header
+        id="header"
+        data-logo="./icons/logo.png"
+        data-home="./index.html"
+    ></header>
 
+    <!-- Main -->
     <main class="main">
 
         <section class="section">
-            <h2>Документация</h2>
+
+            <h1>Хотите разобраться в веб-разработке?!</h1>
+
             <p>
-                Здесь собраны материалы по трём технологиям JavaScript.
-                Выбирай интересующую тебя технологию и начинай изучение!
+                Добро пожаловать в iLoveLearnDocs! Это независимая
+                образовательная платформа, которая помогает разобраться
+                в современных инструментах веб-разработки.
             </p>
+
+            <p>
+                Здесь собраны понятные объяснения, примеры кода и
+                материалы, которые помогут постепенно освоить новые
+                технологии и научиться применять их на практике.
+            </p>
+
         </section>
 
         <section class="section">
-            <h2>Node.js</h2>
+
+            <h2>Что будем изучать?!</h2>
+
             <p>
-                Node.js позволяет запускать JavaScript вне браузера.
-                Хочешь создавать серверные приложения? Тогда начни знакомство с Node.js!
+                Сейчас платформа посвящена трём технологиям.
+                У каждой из них своё назначение и свои возможности.
             </p>
+
+            <div class="documentation-list">
+
+                <article class="documentation-item">
+
+                    <h3>Node.js</h3>
+
+                    <p>
+                        Node.js позволяет запускать JavaScript вне браузера.
+                        С его помощью можно создавать серверные приложения,
+                        инструменты командной строки и многое другое.
+                    </p>
+
+                    <a href="./docs/nodejs/index.html">
+                        Перейти к документации Node.js
+                    </a>
+
+                </article>
+
+                <article class="documentation-item">
+
+                    <h3>Svelte</h3>
+
+                    <p>
+                        Svelte — инструмент для создания пользовательских
+                        интерфейсов. Он помогает разрабатывать компоненты
+                        и приложения с помощью JavaScript, HTML и CSS.
+                    </p>
+
+                    <a href="./docs/svelte/index.html">
+                        Перейти к документации Svelte
+                    </a>
+
+                </article>
+
+                <article class="documentation-item">
+
+                    <h3>Astro</h3>
+
+                    <p>
+                        Astro — веб-фреймворк для создания быстрых сайтов.
+                        Он подходит для документации, блогов, страниц
+                        проектов и других контентных веб-сайтов.
+                    </p>
+
+                    <a href="./docs/astro/index.html">
+                        Перейти к документации Astro
+                    </a>
+
+                </article>
+
+            </div>
+
         </section>
 
         <section class="section">
-            <h2>Svelte</h2>
-            <p>
-                Svelte — инструмент для создания пользовательских интерфейсов.
-                Как он работает и чем отличается от других решений?!
-                Давай разберёмся!
-            </p>
-        </section>
 
-        <section class="section">
-            <h2>Astro</h2>
-            <p>
-                Astro помогает создавать быстрые сайты.
-                Разберём его возможности, структуру проектов и основные принципы работы.
-            </p>
-        </section>
+            <h2>Откуда берутся материалы?</h2>
 
-        <section class="section">
-            <h2>Об источниках</h2>
             <p>
-                Материалы подготовлены на основе официальной документации
-                соответствующих технологий. iLoveLearnDocs — независимый проект,
-                не связанный с командами разработчиков этих технологий.
+                При подготовке документации мы опираемся на официальные
+                источники, технические материалы и примеры использования
+                соответствующих технологий.
             </p>
+
+            <p>
+                Информация перерабатывается и объясняется своими словами,
+                чтобы её было проще читать и изучать.
+            </p>
+
+            <div
+                class="info-block"
+                data-component="InfoBlock"
+                data-icon="./icons/info-icon.svg"
+            >
+                <p>
+                    iLoveLearnDocs — независимый образовательный проект.
+                    Он не является официальной документацией Node.js,
+                    Svelte или Astro и не связан с командами разработчиков
+                    этих технологий.
+                </p>
+            </div>
+
         </section>
 
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer id="footer">
         <p>Сделано GitHub-организацией iLove Platform.</p>
     </footer>
+
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel 7 -->
+    <script src="https://unpkg.com/@babel/standalone@7.29.14/babel.min.js"></script>
+
+    <!-- React components -->
+    <script
+        type="text/babel"
+        data-presets="env,react"
+        src="./components/Header.jsx"
+    ></script>
+
+    <script
+        type="text/babel"
+        data-presets="env,react"
+        src="./components/App.jsx"
+    ></script>
+
+    <script
+        type="text/babel"
+        data-presets="env,react"
+        src="./components/InfoBlock.jsx"
+    ></script>
+
+    <script
+        type="text/babel"
+        data-presets="env,react"
+        src="./components/DetailInfoBlock.jsx"
+    ></script>
 
 </body>
 </html>
